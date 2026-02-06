@@ -158,14 +158,10 @@ This app uses the [OpenWeatherMap API](https://openweathermap.org/api):
 - [ ] Background changes based on weather
 - [ ] Mobile responsive design improvements
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👤 Author
 
 Your Name
-- GitHub: [@PRUDHVI-1627](https://github.com/yourusername)
+- GitHub: [@PRUDHVI-1627](https://github.com/PRUDHVI-1627)
 - Email: pruney1627@gmail.com
 
 ## 🤝 Contributing
@@ -183,24 +179,6 @@ Contributions, issues, and feature requests are welcome!
 - [OpenWeatherMap](https://openweathermap.org/) for the weather API
 - Emoji icons for weather representation
 - Inspiration from modern weather apps
-
-## 📸 Screenshots
-
-### Main Interface - Delhi (Default)
-![Delhi Weather](screenshots/screenshot-1-default.png)
-*Default view showing weather in Delhi with temperature, date, and weather condition*
-
-### London Weather
-![London Weather](screenshots/screenshot-2-london.png)
-*Weather information for London with updated temperature and conditions*
-
-### New York Weather
-![New York Weather](screenshots/screenshot-3-newyork.png)
-*Weather display for New York with real-time data*
-
-### Error Handling
-![Error State](screenshots/screenshot-4-error.png)
-*Error message displayed when invalid city name is entered*
 
 ---
 
