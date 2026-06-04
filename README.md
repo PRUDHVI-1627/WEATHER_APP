@@ -1,185 +1,114 @@
 # 🌤️ Weather Forecast App
 
-A simple and elegant weather forecast application that provides real-time weather information for any city in the world.
+A real-time weather forecast app that fetches live data for any city in the world using the OpenWeatherMap API.
 
-![Weather App](https://img.shields.io/badge/Weather-App-blue)
+🔗 **Live Demo**: [weather-app-murex-sigma-56.vercel.app](https://weather-app-murex-sigma-56.vercel.app)
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
+---
+
+## 📸 Preview
+
+<img width="1438" height="733" alt="Weather App Preview" src="https://github.com/user-attachments/assets/65787fc0-6ab7-44ad-af4c-f9216996bffc" />
+
+---
+
 ## ✨ Features
 
-- 🔍 **City Search** - Search for weather information by city name
-- 🌡️ **Real-time Data** - Get current temperature in Celsius
-- 📅 **Date Display** - Shows current date
-- ☁️ **Weather Icons** - Visual representation with emoji icons
-- 💫 **Smooth Animations** - Elegant fade-in and pulse effects
-- ⚡ **Fast Loading** - Responsive and quick data fetching
-- 🎨 **Clean UI** - Modern and minimalist design
-- ❌ **Error Handling** - User-friendly error messages
+- 🔍 Search weather by any city name
+- 🌡️ Real-time temperature in Celsius
+- ☁️ Weather condition with emoji icons
+- 📅 Current date display
+- ❌ Error handling for invalid cities and network issues
+- 💫 Smooth fade-in and pulse animations
+- ⌨️ Press Enter to search (no click needed)
 
-## 🚀 Demo
+---
 
-The app displays:
-- Current temperature
-- City name
-- Date
-- Weather condition with icon
-- Weather description
+## 🛠️ Tech Stack
 
-## 🛠️ Technologies Used
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6+)
+- [OpenWeatherMap API](https://openweathermap.org/api)
 
-- **HTML5** - Structure
-- **CSS3** - Styling and animations
-- **JavaScript (ES6+)** - Functionality and API integration
-- **OpenWeatherMap API** - Weather data source
+---
 
-## 📋 Prerequisites
+## ⚙️ Setup & Run
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Internet connection
-- OpenWeatherMap API key (free tier available)
-
-## ⚙️ Installation
-
-1. Clone the repository
+1. Clone the repo:
 ```bash
-git clone https://github.com/yourusername/weather-forecast-app.git
+   git clone https://github.com/PRUDHVI-1627/WEATHER_APP.git
+   cd WEATHER_APP
 ```
 
-2. Navigate to the project directory
-```bash
-cd weather-forecast-app
+2. Get a free API key from [openweathermap.org](https://openweathermap.org/api)
+
+3. Open `script.js` and replace the placeholder:
+```js
+   const API_KEY = 'YOUR_API_KEY_HERE';
 ```
 
-3. Get your free API key from [OpenWeatherMap](https://openweathermap.org/api)
+4. Open `index.html` in any browser — done!
 
-4. Open `script.js` and replace the API key with your own:
-```javascript
-const API_KEY = 'your_api_key_here';
-```
-
-5. Open `index.html` in your browser
+---
 
 ## 📁 Project Structure
-
-```
-weather-forecast-app/
-│
-├── index.html          # Main HTML file
-├── style.css           # Styling and animations
-├── script.js           # JavaScript logic and API calls
-└── README.md           # Project documentation
-```
-
-## 🎯 Usage
-
-1. Open the application in your browser
-2. The app loads with Delhi weather by default
-3. Enter any city name in the search box
-4. Click the "Search" button or press Enter
-5. View the updated weather information
-
-## 🌈 Features in Detail
-
-### Search Functionality
-- Type city name and click search
-- Press Enter key for quick search
-- Input validation with error messages
-
-### Weather Display
-- Temperature in Celsius (rounded)
-- City name
-- Current date (formatted as "DD Month YYYY")
-- Weather icon (emoji-based)
-- Weather description
-
-### Animations
-- Fade-in effect on page load
-- Pulse animation when updating data
-- Button hover effects
-- Loading state indication
-
-### Error Handling
-- Invalid city name detection
-- Network error handling
-- User-friendly error messages
-- Auto-dismissing error notifications
+WEATHER_APP/
+├── index.html    — Page structure
+├── style.css     — Styling and animations
+├── script.js     — API calls and weather logic
+└── README.md     — You're reading it
+---
 
 ## 🎨 Customization
 
-### Change Default City
-In `script.js`, modify the default city:
-```javascript
+**Change default city** — in `script.js`:
+```js
 window.addEventListener('load', () => {
   getWeather('YourCity');
 });
 ```
 
-### Modify Colors
-In `style.css`, update the color scheme:
+**Change color scheme** — in `style.css`:
 ```css
-body {
-  background-color: #232f32; /* Change background */
-}
-
-.top {
-  background-color: #8293a0; /* Change header */
-}
+body { background-color: #232f32; }
+.top  { background-color: #8293a0; }
 ```
-
-### Add More Weather Data
-Extend the `updateWeather()` function to display:
-- Humidity
-- Wind speed
-- Pressure
-- Sunrise/Sunset times
-
-## 🔑 API Information
-
-This app uses the [OpenWeatherMap API](https://openweathermap.org/api):
-- **Endpoint**: Current Weather Data
-- **Units**: Metric (Celsius)
-- **Free Tier**: 60 calls/minute, 1,000,000 calls/month
-
-## 🐛 Known Issues
-
-- API key is visible in client-side code (consider using a backend proxy for production)
-- Limited to current weather only (no forecast)
-
-## 🚀 Future Enhancements
-
-- [ ] 7-day weather forecast
-- [ ] Hourly forecast
-- [ ] Geolocation support
-- [ ] Temperature unit toggle (Celsius/Fahrenheit)
-- [ ] Favorite cities list
-- [ ] Weather alerts
-- [ ] Background changes based on weather
-- [ ] Mobile responsive design improvements
-
-## 👤 Author
-
-Your Name
-- GitHub: [@PRUDHVI-1627](https://github.com/PRUDHVI-1627)
-- Email: pruney1627@gmail.com
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 🙏 Acknowledgments
-
-- [OpenWeatherMap](https://openweathermap.org/) for the weather API
-- Emoji icons for weather representation
-- Inspiration from modern weather apps
 
 ---
 
-⭐ If you found this project useful, please consider giving it a star!
+## 🚀 Future Improvements
+
+- [ ] 7-day forecast
+- [ ] Geolocation support
+- [ ] Celsius / Fahrenheit toggle
+- [ ] Background changes based on weather condition
+- [ ] Favorite cities list
+
+---
+
+## ⚠️ Note
+
+The API key is stored in client-side code. For production use, route requests through a backend proxy to keep the key private.
+
+---
+
+## 👤 Author
+
+**Galla Prudhvi Raj**
+- GitHub: [@PRUDHVI-1627](https://github.com/PRUDHVI-1627)
+- Email: pruney1627@gmail.com
+
+---
+
+## 🤝 Contributing
+
+1. Fork the project
+2. Create your branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m 'feat: add your feature'`
+4. Push: `git push origin feature/your-feature`
+5. Open a Pull Request
